@@ -1,0 +1,6 @@
+<h1><%= @monstruo.nombre %></h1>
+<p> Descripcion: <%= @monstruo.descripcion %></p>
+<ul>Tweets: <% @monstruo.tweets.each do |t| %>
+<li><%= t.estado %></li>
+<% end %>
+</ul>

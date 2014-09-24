@@ -1,0 +1,6 @@
+<h1>Victimas</h1>
+<ul>
+<% Victima.all.each do |v| %>
+<li><p><%= v.nombre %> asesinado por <%= v.monstruo.nombre %></p></li>
+<% end %>
+</ul>
